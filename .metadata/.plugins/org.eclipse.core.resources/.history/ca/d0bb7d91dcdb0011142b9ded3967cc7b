@@ -1,0 +1,25 @@
+package Exercises;
+
+public class DecimalToBinary_9_10 
+{
+	public static void main(String[] args) 
+	{
+		int number = 123;
+		//11110111
+		System.out.println(decimalToBinary(number));
+		
+	}
+
+	public static String decimalToBinary(int value)
+	{
+		
+		while(value > 0)
+		{
+			System.out.println("  " + value);
+			value /= 2;
+			value % = 2;
+		}
+		return value + "";
+		
+	}
+}

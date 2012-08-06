@@ -1,0 +1,23 @@
+package Exercises;
+
+public class TestPolygon_8_09 
+{
+	public static void main(String[] args) 
+	{
+		NSidedPolygon_8_09  pol1 = new  NSidedPolygon_8_09();
+		
+		pol1.setN(3);
+		pol1.setSide(5);
+		System.out.println(pol1.toString());
+		
+		NSidedPolygon_8_09 pol2 = new NSidedPolygon_8_09(3, 10, 20 ,20);
+		pol2.setN(3);
+		pol2.setSide(10);
+		pol2.setX(20);
+		pol2.setY(20);
+		
+		System.out.println(pol2.toString());
+		
+	}
+
+}

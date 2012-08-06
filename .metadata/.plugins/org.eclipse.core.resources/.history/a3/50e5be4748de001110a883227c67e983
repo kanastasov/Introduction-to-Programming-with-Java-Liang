@@ -1,0 +1,36 @@
+
+public class PrimeNumbers_10_06 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+		boolean isPrime = false;
+		int num = 2;
+		for(num =2; num<=120; num++)
+		{
+			
+			
+			for(int i=2; i< num/2; i++)
+			{
+				if(num % i == 0)
+				{
+					isPrime = false;
+					break;
+				}
+				isPrime = true;
+				
+				
+			}
+			
+		}
+		
+		if(isPrime)
+		{
+			System.out.println(num);
+		}
+		
+	}
+
+}

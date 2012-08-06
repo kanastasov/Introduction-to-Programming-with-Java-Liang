@@ -1,0 +1,24 @@
+package exercises;
+
+public class BinaryToDecimal_9_08 
+{
+	public static void main(String[] args) 
+	{
+		String binaryString = "11110000";
+		System.out.println(binaryToDecimal(binaryString));
+		
+
+//	System.out.println(Integer.parseInt(binaryString, 2);
+	}
+	//10001
+	public static int binaryToDecimal(String binaryString) 
+	{
+	    int value = binaryString.charAt(0) - '0';
+	    for (int i = 1; i < binaryString.length(); i++)
+	    {
+	      value = value * 2 + binaryString.charAt(i) - '0';
+	    }
+
+	    return value;
+	  }
+}

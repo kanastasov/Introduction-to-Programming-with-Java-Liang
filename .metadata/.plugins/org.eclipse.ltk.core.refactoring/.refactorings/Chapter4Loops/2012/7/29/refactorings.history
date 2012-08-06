@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Comprehensive.Lottery_4_23&apos; to &apos;Lottery_4_32&apos;&#x0D;&#x0A;- Original project: &apos;Chapter4Loops&apos;&#x0D;&#x0A;- Original element: &apos;Comprehensive.Lottery_4_23&apos;&#x0D;&#x0A;- Renamed element: &apos;Comprehensive.Lottery_4_32&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Lottery_4_23&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Comprehensive{Lottery_4_23.java[Lottery_4_23" matchStrategy="1" name="Lottery_4_32" qualified="false" references="true" similarDeclarations="false" stamp="1342507469191" textual="false" version="1.0"/>
+</session>

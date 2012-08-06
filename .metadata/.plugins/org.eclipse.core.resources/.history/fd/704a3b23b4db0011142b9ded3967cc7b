@@ -1,0 +1,82 @@
+package Exercises;
+
+import java.util.Random;
+
+public class OccuranceOfEachDigitInAString_9_05 
+{
+	public static void main(String[] args) 
+	{
+		String s = "12203AB3";
+		count(s);
+		
+	}
+	
+	public static void count(String s)
+	{
+		int[] counts = new int[10];
+		int[] store = new int[s.length()];
+		
+		for(int i=0; i<s.length(); i++)
+		{
+			store[i] = i;
+			if(Character.isDigit(s.charAt(i)))
+			{
+				counts[store[i]]++;	
+			}
+			
+			
+		}
+		System.out.print(s);
+		System.out.println();
+		
+		
+		for(int i=0; i<counts.length; i++)
+		{
+			System.out.print("Number " + i + " occurs  " + counts[i] + "  " );
+		}
+	}
+	
+	/**
+	 * 
+	 * public static void countNumbers()
+	{
+		Random generator = new Random();
+		int[] list = new int[11];
+		int[] counts = new int[10];
+		int counter = 0;
+		int number = 1;
+		
+		
+		while(counter <= 10)
+		{
+				number = generator.nextInt(10);
+				list[counter] = number;
+				counter++;
+		}
+		
+		for(int i=0; i<list.length ; i++)
+		{
+			counts[list[i]]++;
+			
+			
+
+
+			System.out.print(list[i] + ", ");
+
+		}
+		
+
+		System.out.println();
+		
+		for(int i=0; i<counts.length ; i++)
+		{
+			if(counts[i] != 0)
+			{
+				System.out.print("Number : " + i + "  occurs " + counts[i] + " \n");
+			}
+			
+		}
+	}
+	 */
+
+}

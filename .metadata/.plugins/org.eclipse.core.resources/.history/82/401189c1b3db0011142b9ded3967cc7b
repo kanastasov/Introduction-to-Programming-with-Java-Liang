@@ -1,0 +1,33 @@
+package Exercises;
+
+public class OccuranceOfEachDigitInAString_9_05 
+{
+	public static void main(String[] args) 
+	{
+		String s = "12203AB3";
+		count(s);
+		
+	}
+	
+	public static void count(String s)
+	{
+		int[] counts = new int[9];
+		int[] store = new int[s.length()];
+		
+		for(int i=0; i<s.length(); i++)
+		{
+			if(Character.isDigit(s.charAt(i)))
+			{
+				counts[store[i]]++;	
+			}
+			
+		}
+		
+		
+		for(int i=0; i<counts.length; i++)
+		{
+			System.out.print(counts[i] + "  " );
+		}
+	}
+
+}

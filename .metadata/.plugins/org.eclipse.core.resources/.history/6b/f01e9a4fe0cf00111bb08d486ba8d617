@@ -1,0 +1,13 @@
+package Comprehensive;
+
+public class PerfectNumber_4_33 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

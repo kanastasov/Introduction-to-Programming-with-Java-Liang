@@ -1,0 +1,6 @@
+2012-07-29 11:44:48,692 ERROR [Worker-10] - System.err - An exception occurred while writing to the platform log:
+2012-07-29 11:44:48,692 ERROR [Worker-10] - System.err - java.io.IOException: There is not enough space on the disk
+2012-07-29 11:44:48,692 ERROR [Worker-10] - System.err - at java.io.FileOutputStream.writeBytes(Native Method)
+2012-07-29 11:44:48,692 ERROR [Worker-10] - System.err - at java.io.FileOutputStream.write(FileOutputStream.java:318)
+2012-07-29 11:44:48,692 ERROR [Worker-10] - System.err - at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+2012-07-29 11:53:54,967 ERROR [Worker-1] - System.err - Error Loading DDMS Preferences

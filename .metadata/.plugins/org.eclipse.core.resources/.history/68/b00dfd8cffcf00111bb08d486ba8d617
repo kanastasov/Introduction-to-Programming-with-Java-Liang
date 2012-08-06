@@ -1,0 +1,43 @@
+package Comprehensive;
+
+public class PerfectNumber_4_33 
+{
+	public static void main(String[] args) 
+	{
+		
+		int perfectNum = 28;
+		int counter = 1;
+		int temp = 0;
+		while(perfectNum < 30 )
+		{
+			for(int i=2; i< 100; i++)
+			{
+				
+				
+				if(perfectNum % i == 0 && perfectNum != i)
+				{
+						temp += i;
+					System.out.println(temp);
+						if(perfectNum == (temp + 1))
+						{
+							System.out.println(perfectNum);
+							
+						}
+						
+					
+					
+				}
+//				System.out.println(temp);
+//				temp = 0;
+				
+			}
+			
+			
+			perfectNum ++;
+		}
+		
+		
+		
+	}
+
+}

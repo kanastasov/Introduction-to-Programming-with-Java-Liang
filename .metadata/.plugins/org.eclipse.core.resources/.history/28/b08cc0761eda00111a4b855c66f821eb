@@ -1,0 +1,22 @@
+package Exercises;
+
+public class TestQuadraticEquation_8_10
+{
+
+	public static void main(String[] args) 
+	{
+
+		QuadraticEquation_8_10 qua  = new QuadraticEquation_8_10();
+		qua.setA(3.2);
+		qua.setB(4.3);
+		qua.setC(5.5);
+		if(qua.getDescriminat() > 0)
+		{
+			System.out.println(qua.getRoot1() + " and " + qua.getRoot2());
+		}
+		System.out.println(qua.toString());
+		
+		
+	}
+
+}

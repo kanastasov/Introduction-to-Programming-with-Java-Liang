@@ -1,0 +1,41 @@
+package Exercises;
+
+import java.util.Scanner;
+
+public class CommandLinePolindrome_9_13 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		String s = ""
+		String store = "";
+		System.out.println("Enter a string: ");
+		for(int i=0; i<args.length; i++)
+		{
+			store = args[i];
+		}
+			s = store;
+		
+		System.out.println(isPalindrome(s)  ? " is a palindrome: " : " is not a palindrome: ");
+		
+	}
+	
+	public static boolean isPalindrome(String s)
+	{
+		int low = 0;
+		int high = s.length() -1;
+		
+		while(low < high)
+		{
+			if(s.charAt(low) != s.charAt(high))
+			{
+				return false;
+			}
+			low++;
+			high --;
+		}
+		return true;
+	}
+
+}

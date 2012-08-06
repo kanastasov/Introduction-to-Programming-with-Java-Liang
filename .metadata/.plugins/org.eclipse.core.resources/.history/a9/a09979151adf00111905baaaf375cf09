@@ -1,0 +1,91 @@
+package Exersices;
+
+import java.util.Scanner;
+
+public class TicTacToe 
+{
+	static int counter = 1;
+	static boolean isFirst = true;
+	public static void main(String[] args) 
+	{
+//		for(int i=1; i<10; i++)
+//		{
+			display();	
+//		}
+		
+			String[][] matrix = getIt();
+		
+			for(int i=0; i<matrix.length; i++)
+			{
+				for(int j=0; j<matrix[i].length; j++)
+				{
+					System.out.print(matrix[i][j] + " ");
+				}
+			}
+		
+	}
+
+	public static void display()
+	{
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t|" +
+			"\n-------------------------");
+		
+		System.out.print("Enter a row (1, 2, or 3) for player ");
+		count();
+		System.out.println("Enter a col (1, 2, or 3) for the same player ");
+		int row = input.nextInt();
+		int col = input.nextInt();
+		
+		
+		
+	}
+	
+	public static void count()
+	{
+		if(counter % 2 != 0)
+		{
+			isFirst = true;
+			System.out.println( "First");
+		}
+		else if(counter % 2 == 0)
+		{
+			isFirst = false;
+			System.out.println("Second");
+		}
+		counter++;
+	}
+	
+	public static String[][] getIt()
+	{
+		Scanner input = new Scanner(System.in);
+		String[][] matrix = new String[3][3];
+		for(int i=0; i<matrix.length; i++)
+		{
+			for(int j=0; j<matrix[i].length; j++)
+			{
+				if(isFirst)
+				{
+					matrix[i][j]  = "O";
+				}
+				else
+				{
+					matrix[i][j] = "X";
+				}
+//				matrix[i][j] = input.nextLine();
+			}
+		}
+		
+		
+		
+		return matrix;
+	}
+	
+}

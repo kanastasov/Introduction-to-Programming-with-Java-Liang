@@ -1,0 +1,192 @@
+package Exersices;
+
+import java.util.Scanner;
+
+public class TicTacToe 
+{
+	static int counter = 0;
+	static boolean isFirst;
+	public static void main(String[] args) 
+	{
+		
+			int[][] matrix = new int[3][3];
+			
+//			for(int i=0; i<3; i++)
+//			{
+//				for(int j=0; j<3; j++)
+//				{
+					int i=0, j =0;
+					matrix = printIt(matrix, i, j);
+//				}
+//			}
+			
+		
+			
+			
+//			for(int k=0; k<10; k++)
+//			{
+//				printIt(matrix, counter, counter);	
+//				for(int i=0; i<matrix.length; i++)
+//				{
+//					for(int j=0; j<matrix[i].length; j++)
+//					{
+//						System.out.print(matrix[i][j] + " ");
+//					}
+//				}
+//			}
+		
+	}
+
+	public static void display()
+	{
+	}
+	
+	public static String count()
+	{
+		counter++;
+		if(counter % 2 != 0)
+		{
+			return "First";
+		}
+			return "Second";
+	}
+	
+	public static int[][] printIt(int[][]matrix, int row, int col)
+	{
+		Scanner input = new Scanner(System.in);
+		
+		matrix = new int[3][3];
+		
+		
+		
+		System.out.println("-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t|" +
+			"\n-------------------------");
+		System.out.println("Enter a row (1, 2, or 3) for player " + count());
+		
+		System.out.println("Enter a col (1, 2, or 3) for the same player ");
+		 row = input.nextInt();
+		 col = input.nextInt();
+		 
+		 if(matrix[row][col] == 0)
+		 {
+
+				System.out.println("-------------------------" +
+					"\n|\t|\t|\t| " +
+					"\n-------------------------" +
+					"\n|\t|\t|\t| " +
+					"\n-------------------------" +
+					"\n|\t|\t|\t|" +
+					"\n-------------------------");
+		 }
+		 else
+		 {
+
+				System.out.println("-------------------------" +
+					"\n|\t|\t|\t| " +
+					"\n-------------------------" +
+					"\n|\t|\t|\t| " +
+					"\n-------------------------" +
+					"\n|\t|\t|\t|" +
+					"\n-------------------------" + matrix[row][col]);
+		 }
+		
+		if(!hasFinished(matrix)  && canInsert(matrix, row, col))
+		{
+			matrix = add(matrix, row,  col);
+			
+		}
+		
+		for(int i=0; i<matrix.length; i++)
+		{
+			for(int j=0; j<matrix[i].length; j++)
+			{
+				System.out.print(matrix[row][col] + " ");
+			}
+		}
+		
+		
+		
+		return matrix;
+	}
+	
+	
+	public static boolean hasFinished(int[][]matrix)
+	{
+		
+		// Check rows
+        for (int i = 0; i < 3; i++)
+        {
+        	
+            if (matrix[i][0] == matrix[i][1] && matrix[i][0] == matrix[i][2])
+            {
+//            	System.out.println("All " + matrix[i][0] + "'s on row " + i);
+            	return true;
+            }
+        }
+        
+        // Check cols
+        for(int i=0; i<3; i++)
+        {
+        	if(matrix[0][i] == matrix[1][i] && matrix[0][i] == matrix[2][i])
+        	{
+//        		System.out.println("All " + matrix[0][i] + "'s on row" + i);
+        		return true;
+        	}
+        }
+        
+        //Chech Major Diagonal
+        if(matrix[0][0] == matrix[1][1] && matrix[0][0] == matrix[2][2])
+    	{
+//    		System.out.println("All " + matrix[0][0] + "'s on major diagonal");
+    		return true;
+    	}
+        
+
+        //Check Sub Diagonal
+        if(matrix[0][2] == matrix[1][1] && matrix[0][2] == matrix[2][0])
+    	{
+//    		System.out.println("All " + matrix[0][2] + "'s on sub diagonal");
+    		return true;
+    	}
+        return false;
+
+	}
+	
+	//check wether the possition for insertion is available
+	public static boolean canInsert(int[][] matrix, int row, int col)
+	{
+		if(matrix[row][col] == 0)
+		{
+			return true;
+		}
+		return false;
+		
+	}
+	
+	// if canInsert is true insert the element in the matrix:
+	public static int[][] add(int[][] matrix, int row, int col)
+	{
+		if(canInsert(matrix, row, col))
+		{
+			if(count().equals("First"))
+			{
+				matrix[row][col]  = 1;
+				System.out.print(matrix[row][col]);
+			}
+			else
+			{
+				matrix[row][col] = 2;
+				System.out.print(matrix[row][col]);
+			}
+			return matrix;
+		}
+		return matrix;
+		
+	}
+	
+}

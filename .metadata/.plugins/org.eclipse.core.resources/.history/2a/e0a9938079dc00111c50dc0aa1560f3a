@@ -1,0 +1,48 @@
+package exercises;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+import javax.sound.sampled.Line;
+
+public class CountingCharactersWordsAndLines_9_17
+{
+	public static void main(String[] args) throws FileNotFoundException 
+	{
+		modifyFile();
+		
+	
+		
+		
+	}
+	
+	public static void modifyFile() throws FileNotFoundException
+	{
+		File file = new File("scores.txt");
+		Scanner input = new Scanner(file);
+		PrintWriter write = new PrintWriter(file);
+		int lineNumber = 0;
+		while(input.hasNext())
+		{
+			lineNumber++;
+			
+			System.out.println(input.nextLine());
+//			System.out.println("The number of lines are: " + lineNumber);
+		}
+		
+		
+		
+		if(!file.exists())
+		{
+			System.out.println("The file " + file + " doesn'e exist");
+			System.exit(0);
+		}
+		
+		
+		
+		
+	}
+
+}

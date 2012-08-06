@@ -1,0 +1,28 @@
+package ExerciseSections3dot1To3dot10;
+
+import java.util.Scanner;
+
+public class CheckingISBN_09 
+{
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter 9 digits of the ISBN:");
+		int firstNum = input.nextInt();
+		int secondNum = input.nextInt();
+		int thirdNum = input.nextInt();
+		int fourthNum = input.nextInt();
+		int fifthNum = input.nextInt();
+		int sixthNum = input.nextInt();
+		int seventhNum = input.nextInt();
+		int eightNum = input.nextInt();
+		int ninthNum = input.nextInt();
+		
+		int ISBN = ((firstNum + (secondNum * 2) + (thirdNum * 3) + (fourthNum * 4) + (fifthNum * 5) + (sixthNum * 6) + (seventhNum * 7) + (eightNum * 8) + (ninthNum * 9)) % 11);
+		System.out.println("The full ISBN is: " + firstNum + "" + secondNum +"" + thirdNum + "" +
+		fourthNum + "" + fifthNum + "" + sixthNum + "" + seventhNum + "" + eightNum + "" + ninthNum + "" +   ISBN);
+		
+	}
+
+}

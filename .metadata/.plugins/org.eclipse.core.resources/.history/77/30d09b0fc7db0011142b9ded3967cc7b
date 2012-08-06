@@ -1,0 +1,28 @@
+package Exercises;
+
+public class BinaryToDecimal_9_08 
+{
+	public static void main(String[] args) 
+	{
+		String binaryString = "10001";
+		System.out.println(binaryToDecimal(binaryString));
+		
+
+//	System.out.println(Integer.parseInt(binaryString, 2);
+	}
+	//10001
+	public static int binaryToDecimal(String binaryString)
+	{
+		int decimal = 0;
+		for(int i=0; i<binaryString.length()   ; i++)
+		{
+			if(binaryString.charAt(i) != 0)
+			{
+				decimal = (int) Math.pow(2, i);
+				System.out.println("decimal: " + decimal + "  " + Math.pow(2, i));
+			}
+			
+		}
+		return decimal;
+	}
+}

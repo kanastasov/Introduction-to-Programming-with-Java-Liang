@@ -1,0 +1,40 @@
+
+public class PrimeNumbersFactors_10_05 
+{
+
+	public static void main(String[] args) 
+	{
+		StackOfIntegers_10_05 stack = new StackOfIntegers_10_05();
+		
+		
+		int num = 120;
+		int counter = num;
+		System.out.println("Divisorts in order:");
+		while(counter > 0)
+		{
+			
+			for(int i=2; i < 60; i++)
+			{
+				if(num % i == 0)
+				{
+					num /= i;
+					stack.push(i);
+					System.out.print(i + " ");
+					break;
+				}
+			}
+			counter--;
+		}
+		System.out.println();
+		System.out.println("Divosiors in the stack:");
+		while(!stack.empty())
+		{
+			System.out.print(stack.pop() + " ");
+		}
+		
+		
+			 
+
+	}
+
+}

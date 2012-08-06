@@ -1,0 +1,33 @@
+package Comprehensive;
+
+public class PerfectNumber_4_33 
+{
+	public static void main(String[] args) 
+	{
+		
+		int perfectNum = 5;
+		
+		for(int i=2; i<100; i++)
+		{
+			int temp = perfectNum;
+			if(perfectNum % i == 0  && perfectNum != i)
+			{
+				
+//				System.out.println(temp);
+//				System.out.println(i);
+//				temp /= i;
+//				System.out.println(temp);
+			}
+			perfectNum ++;
+			System.out.println(perfectNum);
+			i = 2;
+			if(perfectNum == 1000)
+			{
+				
+				System.out.println("Time to break: ");
+				break;
+			}
+		}
+	}
+
+}

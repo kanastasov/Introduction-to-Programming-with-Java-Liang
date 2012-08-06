@@ -1,0 +1,35 @@
+package Comprehensive;
+
+import java.lang.Math;
+
+public class Summation_4_35 
+{
+
+
+	public static void main(String[] args) 
+	{
+		double numerator = 1;
+		double denominator = 3;
+		calculateFractions(numerator, denominator);
+	}
+	
+	public static void calculateFractions(double numerator, double denominator)
+	{
+		
+		double num = 0;
+		double sumPossitive = 0;
+		for(int counter = 1; counter <= 100; counter ++)
+			while(num < counter )
+			{
+				
+				sumPossitive += (numerator / denominator);
+				System.out.println("Possitive: " + numerator + " and denominator is: " + denominator);
+				denominator ++;
+				num++;
+				double p = 4 * ( 1 + sumPossitive);
+	//			System.out.println("PI is: " + p);
+			}
+//		double p = 4 * ( 1 + sumPossitive);
+//		System.out.println("PI is: " + p);
+	}
+}

@@ -1,0 +1,30 @@
+package comprehensive;
+
+import javax.swing.JOptionPane;
+
+public class GuessingTheCapitals_9_22 
+{
+	public static void main(String[] args) 
+	{
+		String[][] matrix = {
+				{"France", "Paris"},
+				{"England", "London"},
+				{"Wales", "Cardiff"},
+				{"Scotland", "Edinburg"},
+				{"Ireland", "Dublin"},
+				{"Romania", "Bucharest"},
+				{"Macedonia", "Skopie"},
+				{"Hundary", "Budapest"}};
+		
+		String txt = "What is the capital of ";
+		for(int i=0; i<matrix.length; i++)
+		{
+			for(int j=0; j<matrix[0].length; j++)
+			{
+				String message = JOptionPane.showInputDialog( matrix[i][0]);
+			}
+		}
+		
+	}
+
+}

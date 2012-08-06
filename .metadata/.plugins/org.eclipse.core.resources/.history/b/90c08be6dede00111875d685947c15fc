@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class MyDate 
+{
+	private int year;
+	private int month;
+	private int day;
+	
+	public MyDate()
+	{
+		Date date = new Date();
+	}
+	
+	public MyDate(long elapsedTime)
+	{
+		Date date = new Date(elapsedTime);
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+
+	}
+
+}

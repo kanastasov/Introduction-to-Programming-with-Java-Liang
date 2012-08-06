@@ -1,0 +1,35 @@
+package Exercises;
+
+public class IdenticalArrays_6_27 
+{
+	public static void main(String[] args) 
+	{
+		int[] list = {5, 2, 5, 6, 6, 1};
+	}
+	
+	public static boolean equals(int[] list1, int[] list2)
+	{
+		
+		
+		return false;
+	}
+	
+	public static void getCount(int[] list)
+	{
+		int [] counts = new int[10];
+		
+		for(int i=0; i<list.length; i++)
+		{
+			counts[list[i]]++;
+			
+		}
+		
+		for(int i=0; i<counts.length; i++)
+		{
+			System.out.println(counts[i]);
+		}
+		
+		
+	}
+
+}

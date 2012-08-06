@@ -1,0 +1,24 @@
+import java.util.Date;
+
+
+public class Exersices 
+{
+	public static void main(String[] args) 
+	{
+
+		
+		for(long i=1000; i<=1000000000; i *= 10)
+		{
+			Date dd = new Date(i);
+			dd.getDate();
+			System.out.println(dd.toString());
+//			System.out.println(dd.getDate());
+			
+			
+			
+			
+		}
+		
+	}
+	
+}

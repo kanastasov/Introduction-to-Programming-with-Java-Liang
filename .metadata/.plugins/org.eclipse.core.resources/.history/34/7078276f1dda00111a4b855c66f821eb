@@ -1,0 +1,12 @@
+package Exercises;
+
+public class TestQuadraticEquation_8_10
+{
+
+	public static void main(String[] args) 
+	{
+
+		QuadraticEquation_8_10 qua  = new QuadraticEquation_8_10();
+	}
+
+}

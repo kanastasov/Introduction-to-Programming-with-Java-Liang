@@ -1,0 +1,84 @@
+package exercises;
+
+public class PhoneKeypads_9_07 
+{
+	public static void main(String[] args) 
+	{
+		
+		String str = "1-800-Flowers";
+		str.toLowerCase();
+		
+		for(int i=0; i<str.length(); i++)
+		{
+			if(Character.isLetter(str.charAt(i)))
+			{
+				System.out.print(getNumber(str.charAt(i)));
+			}
+			else
+			{
+				System.out.print(str.charAt(i));
+			}
+			
+		}
+
+	}
+	public static int getNumber(char upperCaseLetter)
+	{
+		int number = 0;
+		if(Character.isLetter(upperCaseLetter))
+		{
+			switch(upperCaseLetter)
+			{
+				case 'a' : number = 2;
+				case 'b' : number = 2;
+				case 'c' : number = 2;
+				break;
+				
+				case 'd' : number = 3;
+				case 'e' : number = 3;
+				case 'f' : number = 3;
+				break;
+				
+				case 'g' : number = 4;
+				case 'h' : number = 4;
+				case 'i' : number = 4;
+				break;
+				
+				
+				case 'j' : number = 5;
+				case 'k' : number = 5;
+				case 'l' : number = 5;
+				break;
+				
+				
+				case 'm' : number = 6;
+				case 'n' : number = 6;
+				case 'o' : number = 6;
+				break;
+				
+				case 'p' : number = 7;
+				case 'q' : number = 7;
+				case 'r' : number = 7;
+				case 's' : number = 7;
+				break;
+				
+				
+				case 't' : number = 8;
+				case 'u' : number = 8;
+				case 'v' : number = 8;
+				break;
+				
+				
+				case 'w' : number = 9;
+				case 'x' : number = 9;
+				case 'y' : number = 9;
+				case 'z' : number = 9;
+				break;
+				
+			}
+			return number;
+		}
+		return upperCaseLetter;
+	}
+
+}

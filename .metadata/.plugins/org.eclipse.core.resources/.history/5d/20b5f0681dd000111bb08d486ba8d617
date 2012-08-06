@@ -1,0 +1,37 @@
+package Comprehensive;
+
+public class Summation_4_35 
+{
+
+
+	public static void main(String[] args) 
+	{
+		double numerator = 1;
+		double denominator = 3;
+		calculateFractions(numerator, denominator);
+	}
+	
+	public static void calculateFractions(double numerator, double denominator)
+	{
+		
+		double num = 0;
+		double sumPossitive = 0;
+		for(int counter = 100000; counter <= 1000000; counter += 100000)
+		while(num < counter )
+		{
+			
+			sumPossitive += -(numerator / denominator) ;
+//			System.out.println("Negative: " + numerator + " and denominator is: " + denominator);
+//			System.out.println("Number of operation: " + (num + 1) +  "  "  + numerator / denominator + "   ");
+			denominator +=2;
+			sumPossitive += (numerator / denominator);
+//			System.out.println("Possitive: " + numerator + " and denominator is: " + denominator);
+			denominator +=2;
+			num++;
+			double p = 4 * ( 1 + sumPossitive);
+			System.out.println("PI is: " + p);
+		}
+//		double p = 4 * ( 1 + sumPossitive);
+//		System.out.println("PI is: " + p);
+	}
+}

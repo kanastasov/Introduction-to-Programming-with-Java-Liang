@@ -1,0 +1,13 @@
+package Exercises;
+
+public class SummingIntegers_9_14a {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

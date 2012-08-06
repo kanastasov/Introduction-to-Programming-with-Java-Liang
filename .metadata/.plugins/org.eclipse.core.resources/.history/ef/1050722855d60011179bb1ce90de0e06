@@ -1,0 +1,13 @@
+package Exercises;
+
+public class IdenticalArrays_6_27 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

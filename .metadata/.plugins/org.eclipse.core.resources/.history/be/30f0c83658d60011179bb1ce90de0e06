@@ -1,0 +1,57 @@
+package Exercises;
+
+public class IdenticalArrays_6_27 
+{
+	public static void main(String[] args) 
+	{
+		int[] list1 = {5, 2, 5, 6, 6, 1};
+		int[] list2 = {5, 5, 2 ,6 ,1, 6};
+		equals(list1, list2);
+		getCount(list1);
+	}
+	
+	public static boolean equals(int[] list1, int[] list2)
+	{
+		int[] number = getCount(list1);
+		int[] number2 = getCount(list2);
+		
+		if(list1.length == list2.length)
+		{
+			for(int i=0; i<list1.length; i++)
+			{
+				if(number[i] == number2[i])
+				{
+					System.out.println("Two lists are identical: ");
+				}
+				else
+				{
+					System.out.println("Two lists are not identical");
+				}
+			}
+			
+		}
+		
+		return false;
+	}
+	
+	public static int[] getCount(int[] list)
+	{
+		System.out.println();
+		int [] counts = new int[10];
+		
+		for(int i=0; i<list.length; i++)
+		{
+			counts[list[i]]++;
+			
+		}
+		
+		for(int i=0; i<counts.length; i++)
+		{
+			System.out.print(counts[i] + " ");
+		}
+		return counts;
+		
+		
+	}
+
+}

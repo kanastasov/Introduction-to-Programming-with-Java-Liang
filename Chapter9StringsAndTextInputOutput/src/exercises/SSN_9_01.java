@@ -1,0 +1,55 @@
+package exercises;
+
+import java.util.Scanner;
+
+public class SSN_9_01 {
+	public static void main(String[] args) 
+	{
+
+		System.out.println(isValid());
+	}
+
+	public static boolean isValid()
+	{
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter 9 digit social security number: in the format DDD-DD-DDDD ");
+		String ssn = input.nextLine();
+		
+		if(ssn.length() != 11)
+		{
+			System.out.println("Invalid length of the social security number: ");
+			System.exit(0);
+		}
+		
+		if(filter(ssn))
+		{
+			return true;
+		}
+		return false;
+		
+		
+	}
+	
+	public static boolean filter(String ssn)
+	{
+		StringBuilder stb = new StringBuilder();
+		
+		for(int i=0; i<ssn.length(); i++)
+		{
+			if(Character.isDigit(ssn.charAt(i)))
+			{
+				stb.append(ssn.charAt(i));
+			}
+		}
+		
+		if(stb.length() == 9 )
+		{
+			return true;
+		}
+		return false;
+			
+//		return stb.toString();
+		
+	}
+}

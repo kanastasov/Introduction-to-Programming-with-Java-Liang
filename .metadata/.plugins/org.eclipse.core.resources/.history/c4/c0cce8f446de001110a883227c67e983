@@ -1,0 +1,38 @@
+
+public class PrimeNumbers_10_05 
+{
+
+	public static void main(String[] args) 
+	{
+		StackOfIntegers_10_05 stack = new StackOfIntegers_10_05();
+		
+		
+		int num = 120;
+		int counter = num;
+		while(counter > 0)
+		{
+			
+			for(int i=2; i < 60; i++)
+			{
+				if(num % i == 0)
+				{
+					num /= i;
+					stack.push(i);
+					System.out.println(i);
+					break;
+				}
+			}
+			counter--;
+		}
+		
+		for(int i=0; i<stack.getSize(); i++)
+		{
+			System.out.print(stack.pop + "  ");
+		}
+		
+		
+			 
+
+	}
+
+}

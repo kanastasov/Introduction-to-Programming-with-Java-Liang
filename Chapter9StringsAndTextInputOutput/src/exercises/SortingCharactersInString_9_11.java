@@ -1,0 +1,40 @@
+package exercises;
+
+import java.util.Arrays;
+
+public class SortingCharactersInString_9_11
+{
+	public static void main(String[] args) 
+	{
+		String s = "asdfasdhhasdf";
+		sort(s);
+
+	}
+
+	public static String sort(String s)
+	{
+//		StringBuilder sb = new StringBuilder(s);
+//		for(int i=0; i<sb.length() -1; i++)
+//		{
+//			if(sb.charAt(i) > sb.charAt(i + 1))
+//			{
+//				char temp = sb.charAt(i);
+//				s.charAt(i) = sb.charAt(i +1);
+//				
+//				
+//			}
+//		}
+		int[] list = new int[s.length()];
+		for(int i=0; i< s.length(); i++)
+		{
+			list[i] = s.charAt(i);
+		}
+		Arrays.sort(list);
+		for(int i=0; i< s.length(); i++)
+		{
+			
+			System.out.println(list[i] + " ");
+		}
+		return "";
+	}
+}

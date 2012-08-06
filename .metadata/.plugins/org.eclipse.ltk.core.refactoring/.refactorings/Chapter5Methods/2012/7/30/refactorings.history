@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RandomCharacter.java&apos; to &apos;Chapter6SingleDimentionalArrays/src/Examples&apos;&#x0D;&#x0A;- Original project: &apos;Chapter5Methods&apos;&#x0D;&#x0A;- Destination element: &apos;Chapter6SingleDimentionalArrays/src/Examples&apos;&#x0D;&#x0A;- Original element: &apos;CaseStudy.RandomCharacter.java&apos;" description="Copy compilation unit" destination="=Chapter6SingleDimentionalArrays/src&lt;Examples" element1="/src&lt;CaseStudy{RandomCharacter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1342947824986" units="1" version="1.0"/>
+</session>

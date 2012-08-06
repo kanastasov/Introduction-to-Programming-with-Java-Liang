@@ -1,0 +1,17 @@
+package Exercises;
+
+public class OccuranceOfEachDigitInAString_9_05 
+{
+	public static void main(String[] args) 
+	{
+		String s = "12203AB3";
+		System.out.println(count(s));
+		
+	}
+	
+	public static int[] count(String s)
+	{
+		int[] counts = s
+	}
+
+}

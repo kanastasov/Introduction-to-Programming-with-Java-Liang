@@ -1,0 +1,21 @@
+package Exercises;
+
+public class BinaryToDecimal_9_08 
+{
+	public static void main(String[] args) 
+	{
+		String binaryString = "10001";
+		System.out.println(binaryToDecimal(binaryString));
+		
+
+	}
+
+	public static int binaryToDecimal(String binaryString)
+	{
+		
+		for(int i=0; i<binarySring.length(); i++)
+		{
+			
+		}
+	}
+}

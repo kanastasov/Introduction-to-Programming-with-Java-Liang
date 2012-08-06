@@ -1,0 +1,23 @@
+INDEX VERSION 1.126+C:\Users\Anastasov\Desktop\java-2012.02.13\lectures\Fundamentals\Liang\.metadata\.plugins\org.eclipse.jdt.core
+4265081050.index
+1965932688.index
+1653143167.index
+3249314575.index
+4139133658.index
+25920549.index
+1861458172.index
+588206096.index
+2982705214.index
+3521309912.index
+405043665.index
+535377739.index
+2662459785.index
+1063559783.index
+2256715287.index
+2423478298.index
+2967270157.index
+446455111.index
+2123569993.index
+4244186729.index
+1554173417.index
+1143404762.index

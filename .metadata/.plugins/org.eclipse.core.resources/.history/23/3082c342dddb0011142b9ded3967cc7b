@@ -1,0 +1,33 @@
+package Exercises;
+
+public class DecimalToBinary_9_10 
+{
+	public static void main(String[] args) 
+	{
+		int number = 123;
+		//11110111
+		System.out.println(decimalToBinary(number));
+		
+	}
+
+	public static String decimalToBinary(int value)
+	{
+		StringBuilder sb = null;
+		int binnary = 0;
+		while(value > 0)
+		{
+			System.out.println("  " + value);
+			if(value % 2 == 0)
+			{
+				sb.append("0");
+			}
+			else
+			{
+				sb.append("1");
+			}
+			value /= 2;
+		}
+		return binnary + " ";
+		
+	}
+}

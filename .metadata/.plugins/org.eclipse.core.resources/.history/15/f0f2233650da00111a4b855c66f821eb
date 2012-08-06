@@ -1,0 +1,25 @@
+package Exercises;
+
+public class TestLinearEquation_8_11 
+{
+	public static void main(String[] args) 
+	{
+		LinearEquation_8_11 li = new LinearEquation_8_11();
+		
+		li.setA(5);
+		li.setB(6);
+		li.setC(5);
+		li.setD(7);
+		li.setE(9);
+		li.setF(10);
+		
+		if(isSolvable())
+		{
+			System.out.println(li.getX() + "  " + li.getY());
+			
+		}
+		
+		
+	}
+
+}

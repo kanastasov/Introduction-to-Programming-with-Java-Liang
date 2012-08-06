@@ -1,0 +1,40 @@
+package Exersices;
+
+public class TicTacToe 
+{
+	public static void main(String[] args) 
+	{
+		for(int i=0; i<10; i++)
+		{
+			display();	
+		}
+		
+	}
+
+	public static void display()
+	{
+		StringBuilder sb;
+		int counter = 1;
+		if(counter % 2 != 0)
+		{
+			sb.append( "First");
+		}
+		else
+		{
+			sb.append("Second");
+		}
+		counter++;
+		
+		
+		System.out.println("-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t|" +
+			"\n-------------------------");
+		
+		System.out.println("Enter a row(1, 2, or 3) for player " + sb);
+	}
+	
+}

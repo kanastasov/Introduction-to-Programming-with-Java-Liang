@@ -1,0 +1,22 @@
+package Comprehensive;
+
+public class PerfectNumber_4_33 
+{
+	public static void main(String[] args) 
+	{
+		
+		int temp = 5;
+		for(int i=1; i<100; i++)
+		{
+			
+			if(temp % i == 0)
+			{
+				temp /= i;
+				
+			}
+			temp ++;
+			
+		}
+	}
+
+}

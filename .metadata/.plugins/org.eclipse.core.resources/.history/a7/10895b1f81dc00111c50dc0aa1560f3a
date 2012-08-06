@@ -1,0 +1,13 @@
+package comprehensive;
+
+public class GuessingTheCapitals_9_22 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package Exercises;
+
+public class TestPolygon_8_09 
+{
+	public static void main(String[] args) 
+	{
+		NSidedPolygon_8_09  pol1 = new  NSidedPolygon_8_09();
+		
+		pol1.setN(3);
+		pol1.setSide(5);
+		System.out.println(pol1.toString());
+		
+	}
+
+}

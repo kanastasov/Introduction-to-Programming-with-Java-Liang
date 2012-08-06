@@ -1,0 +1,159 @@
+package Exersices;
+
+import java.util.Scanner;
+
+public class TicTacToe 
+{
+	static int counter = 0;
+	static boolean isFirst;
+	public static void main(String[] args) 
+	{
+		
+			String[][] matrix = new String[3][3];
+			matrix = printIt(matrix, counter, counter);
+		
+			
+			
+			for(int k=0; k<10; k++)
+			{
+				printIt(matrix, counter, counter);	
+				for(int i=0; i<matrix.length; i++)
+				{
+					for(int j=0; j<matrix[i].length; j++)
+					{
+						System.out.print(matrix[i][j] + " ");
+					}
+				}
+			}
+		
+	}
+
+	public static void display()
+	{
+	}
+	
+	public static String count()
+	{
+		counter++;
+		if(counter % 2 != 0)
+		{
+			return "First";
+		}
+			return "Second";
+	}
+	
+	public static String[][] printIt(String[][]matrix, int row, int col)
+	{
+		Scanner input = new Scanner(System.in);
+		
+		matrix = new String[3][3];
+		
+		
+		
+		System.out.println("-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t| " +
+			"\n-------------------------" +
+			"\n|\t|\t|\t|" +
+			"\n-------------------------");
+		System.out.println("Enter a row (1, 2, or 3) for player " + count());
+		
+		System.out.println("Enter a col (1, 2, or 3) for the same player ");
+		 row = input.nextInt();
+		 col = input.nextInt();
+		
+		if(!hasFinished(matrix) )
+		{
+			if(count().equals("First"))
+			{
+				matrix[row][col]  = "O";
+				System.out.print(matrix[row][col]);
+			}
+			else
+			{
+				matrix[row][col] = "X";
+				System.out.print(matrix[row][col]);
+			}
+//
+		}
+//		for(int i=0; i<matrix.length; i++)
+//		{
+//			for(int j=0; j<matrix[i].length; j++)
+//			{
+//				matrix[i][j] = input.nextLine();
+//			}
+//		}
+		
+		
+		
+		return matrix;
+	}
+	
+	
+	public static boolean hasFinished(String[][]matrix)
+	{
+		
+		// Check rows
+        for (int i = 0; i < 3; i++)
+        {
+        	
+            if (matrix[i][0] == matrix[i][1] && matrix[i][0] == matrix[i][2])
+            {
+//            	System.out.println("All " + matrix[i][0] + "'s on row " + i);
+            	return true;
+            }
+        }
+        
+        // Check cols
+        for(int i=0; i<3; i++)
+        {
+        	if(matrix[0][i] == matrix[1][i] && matrix[0][i] == matrix[2][i])
+        	{
+//        		System.out.println("All " + matrix[0][i] + "'s on row" + i);
+        		return true;
+        	}
+        }
+        
+        //Chech Major Diagonal
+        if(matrix[0][0] == matrix[1][1] && matrix[0][0] == matrix[2][2])
+    	{
+//    		System.out.println("All " + matrix[0][0] + "'s on major diagonal");
+    		return true;
+    	}
+        
+
+        //Check Sub Diagonal
+        if(matrix[0][2] == matrix[1][1] && matrix[0][2] == matrix[2][0])
+    	{
+//    		System.out.println("All " + matrix[0][2] + "'s on sub diagonal");
+    		return true;
+    	}
+        return false;
+
+	}
+	
+	//check wether the possition for insertion is available
+	public static boolean canInsert(String[][] matrix, int row, int col)
+	{
+		if(matrix[row][col] == null)
+		{
+			return true;
+		}
+		return false;
+		
+	}
+	
+	// if canInsert is true insert the element in the matrix:
+	public static String[][] add(String[][] matrix, int row, int col)
+	{
+		if(canInsert(matrix, row, col))
+		{
+			matrix[row][col] = matrix[row][col];
+			return matrix;
+		}
+		return matrix;
+		
+	}
+	
+}

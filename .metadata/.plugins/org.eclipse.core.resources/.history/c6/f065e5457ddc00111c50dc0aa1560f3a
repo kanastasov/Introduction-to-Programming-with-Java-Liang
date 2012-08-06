@@ -1,0 +1,13 @@
+package exercises;
+
+public class WritingReadingData_9_19 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

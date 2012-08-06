@@ -1,0 +1,25 @@
+package exercises;
+
+public class OccuranceOfSpecialCharacter_9_04 
+{
+	public static void main(String[] args) 
+	{
+		String str = "Welcome";
+		char ch = 'e';
+		System.out.println(count(str, ch));
+
+	}
+
+	public static int count(String str, char a)
+	{
+		int count = 0;
+		for(int i=0; i<str.length(); i++)
+		{
+			if(str.charAt(i) == a)
+			{
+				count++;
+			}
+		}
+		return count;
+	}
+}

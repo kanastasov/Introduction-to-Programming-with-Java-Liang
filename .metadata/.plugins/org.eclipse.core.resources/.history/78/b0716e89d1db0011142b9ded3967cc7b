@@ -1,0 +1,43 @@
+package Exercises;
+
+public class BinaryToHex_9_09 
+{
+	public static void main(String[] args) 
+	{
+		String binary = "10001";
+		System.out.println(binaryToHex(binary));
+	}
+	
+	public static String binaryToHex(String binaryValue)
+	{
+
+		
+		
+		
+		String number = "0";
+		
+		switch(number)
+		{
+			case "0000" : number = "0";
+			case "0001" : number = "1";
+			case "0010" : number = "2";
+			case "0011" : number = "3";
+			case "0100" : number = "4";
+			case "0101" : number = "5";
+			case "0110" : number = "6";
+			case "0111" : number = "7";
+			case "1000" : number = "8";
+			case "1001" : number = "9";
+			case "1010" : number = "A";
+			case "1011" : number = "B";
+			case "1100" : number = "C";
+			case "1101" : number = "D";
+			case "1110" : number = "E";
+			case "1111" : number = "F";
+			
+		}
+		
+		
+	}
+
+}
